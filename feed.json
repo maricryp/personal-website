@@ -1,0 +1,27 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Business Development, Sales &amp; Go-To-Market",
+    "description": "",
+    "home_page_url": "https://marianacoimbra.com",
+    "feed_url": "https://marianacoimbra.com/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Mariana Rodrigues"
+    },
+    "items": [
+        {
+            "id": "https://marianacoimbra.com/about-me.html",
+            "url": "https://marianacoimbra.com/about-me.html",
+            "title": "about me",
+            "summary": "Mariana Rodrigues Business development operator writing about crypto and AI adoption in Finance, Banking, and SaaS. $whoami I help business teams understand how emerging technologies move from interest to implementation. $focus Crypto payments · AI adoption · SaaS implementation · Finance workflows · Competitive positioning&hellip;",
+            "content_html": "<p>Mariana Rodrigues<br><br>Business development operator writing about crypto and AI adoption in Finance, Banking, and SaaS.<br><br>$whoami<br>I help business teams understand how emerging technologies move from interest to implementation.<br><br>$focus<br>Crypto payments · AI adoption · SaaS implementation · Finance workflows · Competitive positioning<br><br>$writing<br>Latest articles<br><br>$contact<br><a href=\"https://www.linkedin.com/in/marianarcrod/\" target=\"_blank\" rel=\"noopener noreferrer\">LinkedIn</a> ·<a href=\"https://x.com/maricoim\"> X</a> · <a href=\"#INTERNAL_LINK#/null/undefined\" title=\"mar.rcrodrigues@gmail.com\" target=\"_blank\" rel=\"noopener noreferrer\">Email</a></p>",
+            "author": {
+                "name": "Mariana Rodrigues"
+            },
+            "tags": [
+            ],
+            "date_published": "2026-05-09T18:38:16+01:00",
+            "date_modified": "2026-05-09T18:38:16+01:00"
+        }
+    ]
+}

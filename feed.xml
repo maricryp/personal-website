@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>Business Development, Sales &amp; Go-To-Market</title>
+    <link href="https://marianacoimbra.com/feed.xml" rel="self" />
+    <link href="https://marianacoimbra.com" />
+    <updated>2026-05-09T18:38:16+01:00</updated>
+    <author>
+        <name>Mariana Rodrigues</name>
+    </author>
+    <id>https://marianacoimbra.com</id>
+
+    <entry>
+        <title>about me</title>
+        <author>
+            <name>Mariana Rodrigues</name>
+        </author>
+        <link href="https://marianacoimbra.com/about-me.html"/>
+        <id>https://marianacoimbra.com/about-me.html</id>
+
+        <updated>2026-05-09T18:38:16+01:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Mariana Rodrigues Business development operator writing about crypto and AI adoption in Finance, Banking, and SaaS. $whoami I help business teams understand how emerging technologies move from interest to implementation. $focus Crypto payments · AI adoption · SaaS implementation · Finance workflows · Competitive positioning&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Mariana Rodrigues<br><br>Business development operator writing about crypto and AI adoption in Finance, Banking, and SaaS.<br><br>$whoami<br>I help business teams understand how emerging technologies move from interest to implementation.<br><br>$focus<br>Crypto payments · AI adoption · SaaS implementation · Finance workflows · Competitive positioning<br><br>$writing<br>Latest articles<br><br>$contact<br><a href="https://www.linkedin.com/in/marianarcrod/" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·<a href="https://x.com/maricoim"> X</a> · <a href="#INTERNAL_LINK#/null/undefined" title="mar.rcrodrigues@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></p>
+            ]]>
+        </content>
+    </entry>
+</feed>
