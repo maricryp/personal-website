@@ -10,23 +10,22 @@ export default function About() {
       <h1 className="text-2xl font-semibold tracking-tight mb-6">About me</h1>
       <div className="prose max-w-xl">
         <p>
-          I&apos;m a business developer focused on partnerships, pipeline, and
-          the deals that actually move a company forward. This space is where
-          I write about what I&apos;m learning along the way — from
-          outreach and negotiation to reading the fine print in a term sheet.
+          I&apos;m Mariana Coimbra Rodrigues, a business leader with four
+          years of experience as a Business Development Lead, building on an
+          earlier three years as a Business Analyst.
         </p>
         <p>
-          {/* TODO: replace with your real background, industries, and highlights */}
-          Add a paragraph or two here about your experience: the industries
-          you&apos;ve worked in, the kinds of deals or partnerships you&apos;ve
-          led, and what you care about most in this line of work.
+          Over that time, I&apos;ve helped drive over $1B in transactions,
+          working directly with 60+ clients and building a network of 500+
+          contacts along the way.
         </p>
         <h2>What I focus on</h2>
         <ul>
-          <li>Partnerships &amp; strategic alliances</li>
-          <li>Pipeline generation and outbound strategy</li>
-          <li>Deal negotiation and structuring</li>
-          <li>Go-to-market planning</li>
+          <li>RevOps</li>
+          <li>Business development</li>
+          <li>Account management</li>
+          <li>Strategy definition &amp; ICP</li>
+          <li>Goal-setting &amp; go-to-market direction</li>
         </ul>
       </div>
     </div>
