@@ -1,21 +1,21 @@
 ---
 title: "Hi, I'm Mariana"
 date: "2026-09-01"
-excerpt: "A quick introduction — who I am, what I do, and why I'm writing here."
+excerpt: "A quick introduction: who I am, what I do, and why I'm writing here."
 ---
 
-I'm Mariana Coimbra Rodrigues, a business leader with four years of experience as a Business Development Lead — building on an earlier three years as a Business Analyst, learning how to read a business before I ever tried to grow one.
+I'm Mariana Coimbra Rodrigues. I've spent four years as a Business Development Lead, after three years working as a Business Analyst first. That earlier stretch taught me how to actually read a business before I tried to grow one.
 
 ## A bit about me
 
-Over those four years leading BD, I've helped drive over **$1B in transactions**, working directly with **60+ clients** and building a network of **500+ contacts** along the way. It's been a career built on relationships as much as numbers — the two tend to go together more than people expect.
+In those four years leading BD, I've helped close over $1B in transactions, worked directly with 60+ clients, and built a network of 500+ contacts. Most of that came down to relationships, not just numbers.
 
 ## What I focus on
 
-My core focus areas are RevOps, business development, and account management. But where I think I add the most value is a step earlier than execution: strategy definition — figuring out the right ICP (Ideal Customer Profile), setting clear goals, and defining the direction and method a team actually follows to get there.
+My main areas are RevOps, business development, and account management. But honestly, the part I care about most happens earlier than that: defining the strategy. Figuring out the right ICP, setting clear goals, and deciding the direction and method a team should actually follow.
 
 ## Why I'm writing this
 
-I read a lot of business development advice that sounds right in theory and falls apart the moment you're actually on a call with a prospect. This is where I want to write the version that holds up — what worked, what didn't, and what I'd do differently.
+A lot of business development advice sounds great in theory and falls apart the second you're on a real call with a real prospect. I want this space to be the version that actually holds up: what worked, what didn't, and what I'd do differently next time.
 
 If you want to get in touch, you'll find me on the [contact page](/contact).

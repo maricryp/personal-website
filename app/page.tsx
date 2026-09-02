@@ -11,12 +11,12 @@ export default function Home() {
           Business Developer
         </p>
         <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-5">
-          Hi, I&apos;m Mariana — welcome to Mariana in Web3.
+          Hi, I&apos;m Mariana. Welcome to Mariana in Web3.
         </h1>
         <p className="text-lg text-muted max-w-xl mb-8">
           I write about business development, partnerships, and what it
-          actually takes to build a pipeline that lasts — one deal, one
-          relationship, and one lesson at a time.
+          actually takes to build a pipeline that lasts: one deal, one
+          relationship, one lesson at a time.
         </p>
         <div className="flex gap-4 text-sm">
           <Link
