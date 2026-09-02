@@ -34,6 +34,30 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="pb-20 border-t border-border pt-16">
+        <p className="text-sm uppercase tracking-wide text-accent font-medium mb-8">
+          Track record
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-10">
+          <div>
+            <p className="text-4xl font-semibold tracking-tight mb-1">$1B+</p>
+            <p className="text-sm text-muted">Transactions driven</p>
+          </div>
+          <div>
+            <p className="text-4xl font-semibold tracking-tight mb-1">60+</p>
+            <p className="text-sm text-muted">Clients</p>
+          </div>
+          <div>
+            <p className="text-4xl font-semibold tracking-tight mb-1">500+</p>
+            <p className="text-sm text-muted">Contacts built</p>
+          </div>
+          <div>
+            <p className="text-4xl font-semibold tracking-tight mb-1">7+</p>
+            <p className="text-sm text-muted">Years in business development</p>
+          </div>
+        </div>
+      </section>
+
       {latestPosts.length > 0 && (
         <section className="pb-24">
           <h2 className="text-sm uppercase tracking-wide text-accent font-medium mb-5">
