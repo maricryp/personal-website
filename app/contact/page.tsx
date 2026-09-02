@@ -18,25 +18,42 @@ export default function Contact() {
         <ul>
           <li>
             Email:{" "}
-            <a
-              className="underline"
-              href="mailto:you@example.com"
-            >
-              you@example.com
-            </a>{" "}
-            {/* TODO: replace with your real email */}
+            <a className="underline" href="mailto:mar.rcrodrigues@gmail.com">
+              mar.rcrodrigues@gmail.com
+            </a>
           </li>
           <li>
             LinkedIn:{" "}
             <a
               className="underline"
-              href="https://www.linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/marianarcrod/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              linkedin.com/in/your-profile
-            </a>{" "}
-            {/* TODO: replace with your real LinkedIn URL */}
+              linkedin.com/in/marianarcrod
+            </a>
+          </li>
+          <li>
+            Twitter:{" "}
+            <a
+              className="underline"
+              href="https://twitter.com/maricoim"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @maricoim
+            </a>
+          </li>
+          <li>
+            Telegram:{" "}
+            <a
+              className="underline"
+              href="https://t.me/maricoim"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @maricoim
+            </a>
           </li>
         </ul>
       </div>
