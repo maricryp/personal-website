@@ -32,7 +32,7 @@ const methods = [
   {
     name: "Lean Six Sigma",
     where: "Tintas CIN",
-    text: "Used to cut waste, reduce variation and make processes more predictable.",
+    text: "Developed these methodologies to cut waste, reduce variation and make processes more predictable.",
   },
   {
     name: "Kaizen",
@@ -64,6 +64,12 @@ const experience = [
     company: "Bosch",
     length: "1 year",
     text: "Improving day to day processes with Kaizen.",
+  },
+  {
+    role: "Process Improvement",
+    company: "Tintas CIN",
+    length: "7 months",
+    text: "Developed Lean Six Sigma methodologies.",
   },
 ];
 
