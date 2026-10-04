@@ -50,25 +50,32 @@ const experience = [
   },
   {
     role: "Business Development Lead",
-    length: "4 years",
-    text: "Led business development from strategy to signed deal, covering ICP, pipeline, negotiations and key accounts.",
+    company: "Request Network",
+    length: "2024 to 2026",
+    text: "Led business development, covering ICP, pipeline, negotiations and key accounts.",
+  },
+  {
+    role: "Business Development Lead",
+    company: "Coinshift",
+    length: "2022 to 2024",
+    text: "Led business development from strategy to signed deal.",
   },
   {
     role: "Business Analyst",
     company: "Sonae",
-    length: "1.5 years",
+    length: "2020 to 2022 · 1.5 years",
     text: "Data analysis and business analysis, learning how a business really works before trying to grow it.",
   },
   {
     role: "Continuous Process Improvement",
     company: "Bosch",
-    length: "1 year",
+    length: "2019 to 2020 · 1 year",
     text: "Improving day to day processes with Kaizen.",
   },
   {
     role: "Process Improvement",
     company: "Tintas CIN",
-    length: "7 months",
+    length: "2018 to 2019 · 7 months",
     text: "Developed Lean Six Sigma methodologies.",
   },
 ];
@@ -205,7 +212,7 @@ export default function Home() {
         </div>
         <ol className="relative border-l border-border ml-2 space-y-10">
           {experience.map((item) => (
-            <li key={item.role} className="relative pl-8">
+            <li key={`${item.company}-${item.role}`} className="relative pl-8">
               <span className="absolute -left-[7px] top-2 h-3 w-3 rounded-full bg-accent" />
               <p className="text-sm text-muted">
                 {item.length}
