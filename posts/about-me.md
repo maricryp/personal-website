@@ -4,7 +4,7 @@ date: "2026-09-01"
 excerpt: "A quick introduction: who I am, what I do, and why I'm writing here."
 ---
 
-I'm Mariana Coimbra Rodrigues. I work across sales, project delivery, and client management. I started out as a Business Analyst, then spent four years leading business development. That first stretch taught me how to read a business before I tried to grow one.
+I'm Mariana Coimbra Rodrigues. I work across sales, project delivery, and client management. Over seven years I've worked as a Business Analyst at Sonae, in continuous process improvement at Bosch, and for four years as a Business Development Lead. The analysis and process work taught me how to read a business before I tried to grow one.
 
 ## A bit about me
 

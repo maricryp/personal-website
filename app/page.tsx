@@ -25,7 +25,7 @@ const stats = [
   { value: "$1B+", label: "in transactions" },
   { value: "60+", label: "clients" },
   { value: "500+", label: "contacts" },
-  { value: "7+", label: "years across analysis and sales" },
+  { value: "7", label: "years across sales, data analysis and process improvement" },
 ];
 
 const methods = [
@@ -55,8 +55,15 @@ const experience = [
   },
   {
     role: "Business Analyst",
-    length: "3 years",
-    text: "Where I learned to understand how a business really works before trying to grow it.",
+    company: "Sonae",
+    length: "1.5 years",
+    text: "Data analysis and business analysis, learning how a business really works before trying to grow it.",
+  },
+  {
+    role: "Continuous Process Improvement",
+    company: "Bosch",
+    length: "1 year",
+    text: "Improving day to day processes with Kaizen.",
   },
 ];
 
