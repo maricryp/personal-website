@@ -1,78 +1,201 @@
 import Link from "next/link";
 import { getSortedPostsData } from "@/lib/posts";
+import { contact } from "@/lib/contact";
+
+const expertise = [
+  {
+    title: "Delivery & project management",
+    text: "Keeping scope, timelines and people aligned from kickoff to handover.",
+  },
+  {
+    title: "Sales & business development",
+    text: "Finding the right clients, shaping the deal and closing it.",
+  },
+  {
+    title: "Account management",
+    text: "Building relationships that renew and grow after the first contract.",
+  },
+  {
+    title: "RevOps & strategy",
+    text: "Defining the ICP, the goals and the process that makes revenue repeatable.",
+  },
+];
+
+const stats = [
+  { value: "$1B+", label: "in transactions" },
+  { value: "60+", label: "clients" },
+  { value: "500+", label: "contacts" },
+  { value: "7+", label: "years across analysis and sales" },
+];
+
+const methods = [
+  {
+    name: "Lean Six Sigma",
+    where: "Tintas CIN",
+    text: "Used to cut waste, reduce variation and make processes more predictable.",
+  },
+  {
+    name: "Kaizen",
+    where: "Bosch",
+    text: "Used to improve day to day work through small, steady changes by the whole team.",
+  },
+];
+
+const experience = [
+  {
+    role: "Business Development Lead",
+    length: "4 years",
+    text: "Led business development from strategy to signed deal, covering ICP, pipeline, negotiations and key accounts.",
+  },
+  {
+    role: "Business Analyst",
+    length: "3 years",
+    text: "Where I learned to understand how a business really works before trying to grow it.",
+  },
+];
+
+function Eyebrow({ children }: { children: React.ReactNode }) {
+  return (
+    <p className="text-sm font-medium tracking-wide text-accent mb-3">
+      {children}
+    </p>
+  );
+}
 
 export default function Home() {
   const latestPosts = getSortedPostsData().slice(0, 3);
 
   return (
-    <div className="max-w-3xl mx-auto px-6">
-      <section className="py-16 sm:py-24">
-        <p className="text-sm uppercase tracking-wide text-accent font-medium mb-3">
-          Delivery Manager · Project Manager · Sales
-        </p>
-        <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-5">
-          Hi, I&apos;m Mariana. I connect selling with delivering.
-        </h1>
-        <p className="text-lg text-muted max-w-xl mb-8">
-          I work where sales, projects, and clients meet. I write about
-          closing deals that can actually be delivered, keeping projects on
-          track, and building the kind of client relationships that last
-          past the first contract.
-        </p>
-        <div className="flex gap-4 text-sm">
-          <Link
-            href="/blog"
-            className="px-4 py-2 rounded-md bg-accent text-background font-medium hover:opacity-90 transition-opacity"
-          >
-            Read the blog
-          </Link>
-          <Link
-            href="/about"
-            className="px-4 py-2 rounded-md border border-border hover:border-accent hover:text-accent transition-colors"
-          >
-            About me
-          </Link>
+    <div className="max-w-5xl mx-auto px-6">
+      <section className="relative py-20 sm:py-28">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute top-0 right-0 h-72 w-72 rounded-full bg-accent-soft blur-3xl"
+        />
+        <div className="relative">
+          <span className="inline-block rounded-full bg-accent-soft px-4 py-1.5 text-sm text-accent font-medium mb-6">
+            Delivery Manager · Project Manager · Sales
+          </span>
+          <h1 className="font-serif text-5xl sm:text-6xl leading-[1.05] tracking-tight mb-6">
+            Hello, I&apos;m Mariana.
+            <br />
+            <span className="italic text-accent">
+              I connect selling with delivering.
+            </span>
+          </h1>
+          <p className="text-lg text-muted max-w-xl mb-9">
+            I work where sales, projects, and clients meet. I write about
+            closing deals that can actually be delivered, keeping projects on
+            track, and building the kind of client relationships that last
+            past the first contract.
+          </p>
+          <div className="flex flex-wrap gap-3 text-sm">
+            <Link
+              href="/blog"
+              className="rounded-full bg-accent text-on-accent px-6 py-3 font-medium hover:opacity-90 transition-opacity"
+            >
+              Read my writing
+            </Link>
+            <Link
+              href="/contact"
+              className="rounded-full border border-border px-6 py-3 hover:border-accent hover:text-accent transition-colors"
+            >
+              Say hello
+            </Link>
+          </div>
         </div>
       </section>
 
-      <section className="pb-20 border-t border-border pt-16">
-        <p className="text-sm uppercase tracking-wide text-accent font-medium mb-8">
-          Track record
-        </p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-10">
-          <div>
-            <p className="text-4xl font-semibold tracking-tight mb-1">$1B+</p>
-            <p className="text-sm text-muted">In transactions</p>
-          </div>
-          <div>
-            <p className="text-4xl font-semibold tracking-tight mb-1">60+</p>
-            <p className="text-sm text-muted">Clients</p>
-          </div>
-          <div>
-            <p className="text-4xl font-semibold tracking-tight mb-1">500+</p>
-            <p className="text-sm text-muted">Contacts built</p>
-          </div>
-          <div>
-            <p className="text-4xl font-semibold tracking-tight mb-1">7+</p>
-            <p className="text-sm text-muted">Years across analysis and sales</p>
+      <section className="pb-20">
+        <Eyebrow>What I do</Eyebrow>
+        <h2 className="font-serif text-3xl sm:text-4xl tracking-tight mb-8 max-w-xl">
+          Where sales, projects and clients meet
+        </h2>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {expertise.map((item) => (
+            <div
+              key={item.title}
+              className="rounded-2xl border border-border bg-surface p-6"
+            >
+              <h3 className="font-serif text-xl mb-2">{item.title}</h3>
+              <p className="text-sm text-muted leading-relaxed">{item.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="pb-20">
+        <div className="rounded-3xl bg-accent-soft p-8 sm:p-10">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-8">
+            {stats.map((stat) => (
+              <div key={stat.label}>
+                <p className="font-serif text-4xl sm:text-5xl text-accent mb-1">
+                  {stat.value}
+                </p>
+                <p className="text-sm text-muted">{stat.label}</p>
+              </div>
+            ))}
           </div>
         </div>
+      </section>
+
+      <section className="pb-20">
+        <Eyebrow>Methods I work with</Eyebrow>
+        <h2 className="font-serif text-3xl sm:text-4xl tracking-tight mb-8 max-w-xl">
+          Process improvement, in practice
+        </h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {methods.map((method) => (
+            <div
+              key={method.name}
+              className="rounded-2xl border border-border bg-surface p-6"
+            >
+              <p className="text-sm text-accent font-medium mb-1">
+                {method.where}
+              </p>
+              <h3 className="font-serif text-2xl mb-2">{method.name}</h3>
+              <p className="text-sm text-muted leading-relaxed">
+                {method.text}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="pb-20 grid gap-10 md:grid-cols-[1fr_2fr]">
+        <div>
+          <Eyebrow>Experience</Eyebrow>
+          <h2 className="font-serif text-3xl sm:text-4xl tracking-tight">
+            My path so far
+          </h2>
+        </div>
+        <ol className="relative border-l border-border ml-2 space-y-10">
+          {experience.map((item) => (
+            <li key={item.role} className="relative pl-8">
+              <span className="absolute -left-[7px] top-2 h-3 w-3 rounded-full bg-accent" />
+              <p className="text-sm text-muted">{item.length}</p>
+              <h3 className="font-serif text-2xl">{item.role}</h3>
+              <p className="text-muted mt-1">{item.text}</p>
+            </li>
+          ))}
+        </ol>
       </section>
 
       {latestPosts.length > 0 && (
-        <section className="pb-24">
-          <h2 className="text-sm uppercase tracking-wide text-accent font-medium mb-5">
+        <section className="pb-20">
+          <Eyebrow>Writing</Eyebrow>
+          <h2 className="font-serif text-3xl sm:text-4xl tracking-tight mb-8">
             Latest posts
           </h2>
-          <div className="flex flex-col gap-8">
+          <div className="grid gap-4 sm:grid-cols-2">
             {latestPosts.map((post) => (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="block group"
+                className="group rounded-2xl border border-border bg-surface p-6 hover:border-accent transition-colors"
               >
-                <p className="text-xs text-muted mb-1">{post.date}</p>
-                <h3 className="text-lg font-medium mb-1 group-hover:text-accent transition-colors">
+                <p className="text-xs text-muted mb-2">{post.date}</p>
+                <h3 className="font-serif text-xl mb-2 group-hover:text-accent transition-colors">
                   {post.title}
                 </h3>
                 <p className="text-sm text-muted">{post.excerpt}</p>
@@ -81,6 +204,40 @@ export default function Home() {
           </div>
         </section>
       )}
+
+      <section className="pb-24">
+        <div className="rounded-3xl bg-accent text-on-accent p-8 sm:p-12">
+          <h2 className="font-serif text-3xl sm:text-4xl tracking-tight mb-3">
+            Let&apos;s work together
+          </h2>
+          <p className="max-w-lg mb-7 opacity-90">
+            Got a project to deliver, a team to grow, or a deal to shape? I&apos;d
+            love to hear about it.
+          </p>
+          <div className="flex flex-wrap gap-3 text-sm">
+            <a
+              href={`mailto:${contact.email}`}
+              className="rounded-full bg-on-accent text-accent px-6 py-3 font-medium hover:opacity-90 transition-opacity"
+            >
+              Email me
+            </a>
+            <a
+              href={contact.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-on-accent/50 px-6 py-3 hover:bg-on-accent/10 transition-colors"
+            >
+              LinkedIn
+            </a>
+            <Link
+              href="/contact"
+              className="rounded-full border border-on-accent/50 px-6 py-3 hover:bg-on-accent/10 transition-colors"
+            >
+              More ways to reach me
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

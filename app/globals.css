@@ -1,58 +1,69 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fbf6ef;
-  --foreground: #2c2117;
-  --accent: #c1652f;
-  --muted: #8a7a68;
-  --border: rgba(44, 33, 23, 0.12);
+  --background: #fff7f5;
+  --surface: #ffffff;
+  --foreground: #3a2430;
+  --muted: #7a5d69;
+  --accent: #b8466a;
+  --accent-soft: #fbe3ea;
+  --on-accent: #ffffff;
+  --border: rgba(120, 60, 85, 0.16);
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
-  --color-accent: var(--accent);
   --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-on-accent: var(--on-accent);
   --color-border: var(--border);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-dm-sans);
+  --font-serif: var(--font-fraunces);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #221a12;
-    --foreground: #f5ead9;
-    --accent: #e2874c;
-    --muted: #b6a58e;
-    --border: rgba(245, 234, 217, 0.14);
+    --background: #24151d;
+    --surface: #2f1c27;
+    --foreground: #f8e9ee;
+    --muted: #c9a9b6;
+    --accent: #f08fae;
+    --accent-soft: rgba(240, 143, 174, 0.14);
+    --on-accent: #24151d;
+    --border: rgba(248, 233, 238, 0.16);
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
 .prose {
-  line-height: 1.75;
+  line-height: 1.8;
 }
 
 .prose h2 {
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 500;
   color: var(--accent);
-  margin-top: 2rem;
+  margin-top: 2.25rem;
   margin-bottom: 0.75rem;
+}
+
+.prose p {
+  margin-bottom: 1.1rem;
 }
 
 .prose a {
   color: var(--accent);
   text-decoration: underline;
-}
-
-.prose p {
-  margin-bottom: 1.1rem;
+  text-underline-offset: 3px;
 }
 
 .prose ul {

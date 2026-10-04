@@ -36,15 +36,23 @@ export default async function BlogPost({
   }
 
   return (
-    <article className="max-w-3xl mx-auto px-6 py-16">
-      <Link href="/blog" className="text-sm text-muted hover:text-accent transition-colors">
-        &larr; Back to blog
-      </Link>
-      <p className="text-xs text-muted mt-6 mb-2">{post.date}</p>
-      <h1 className="text-3xl font-semibold tracking-tight mb-8">
-        {post.title}
-      </h1>
-      <div className="prose" dangerouslySetInnerHTML={{ __html: post.html }} />
+    <article className="max-w-5xl mx-auto px-6 py-16">
+      <div className="max-w-2xl">
+        <Link
+          href="/blog"
+          className="text-sm text-muted hover:text-accent transition-colors"
+        >
+          &larr; Back to writing
+        </Link>
+        <p className="text-sm text-muted mt-8 mb-3">{post.date}</p>
+        <h1 className="font-serif text-4xl sm:text-5xl tracking-tight mb-10">
+          {post.title}
+        </h1>
+        <div
+          className="prose"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+      </div>
     </article>
   );
 }
