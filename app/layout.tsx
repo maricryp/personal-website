@@ -15,9 +15,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Mariana in Web3 | Delivery, Project & Sales Leader",
+  title: "Mariana Coimbra Rodrigues | Delivery, Project & Sales Leader",
   description:
-    "Notes on delivery, project management, and sales, from Mariana in Web3.",
+    "Notes on delivery, project management, and sales, from Mariana Coimbra Rodrigues.",
 };
 
 const navLinks = [
@@ -36,7 +36,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <header className="border-b border-border">
           <div className="max-w-5xl mx-auto px-6 py-5 flex items-center justify-between">
             <Link href="/" className="font-serif text-xl tracking-tight">
-              Mariana in Web3
+              Mariana Coimbra Rodrigues
             </Link>
             <nav className="flex gap-6 text-sm">
               {navLinks.map((link) => (
@@ -56,7 +56,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 
         <footer className="border-t border-border">
           <div className="max-w-5xl mx-auto px-6 py-8 text-sm text-muted flex items-center justify-between">
-            <span>&copy; {new Date().getFullYear()} Mariana in Web3</span>
+            <span>&copy; {new Date().getFullYear()} Mariana Coimbra Rodrigues</span>
             <Link href="/contact" className="hover:text-accent transition-colors">
               Get in touch
             </Link>

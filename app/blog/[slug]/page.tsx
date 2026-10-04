@@ -15,7 +15,7 @@ export async function generateMetadata({
   const { slug } = await params;
   try {
     const post = getPostBySlug(slug);
-    return { title: `${post.title} | Mariana in Web3` };
+    return { title: `${post.title} | Mariana Coimbra Rodrigues` };
   } catch {
     return { title: "Post not found" };
   }

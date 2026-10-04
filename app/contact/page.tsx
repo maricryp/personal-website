@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { contact } from "@/lib/contact";
 
 export const metadata: Metadata = {
-  title: "Contact | Mariana in Web3",
+  title: "Contact | Mariana Coimbra Rodrigues",
 };
 
 const channels = [

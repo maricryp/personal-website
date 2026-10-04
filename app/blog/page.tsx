@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { getSortedPostsData } from "@/lib/posts";
 
 export const metadata: Metadata = {
-  title: "Writing | Mariana in Web3",
+  title: "Writing | Mariana Coimbra Rodrigues",
 };
 
 export default function BlogIndex() {
