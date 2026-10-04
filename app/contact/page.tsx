@@ -12,8 +12,9 @@ export default function Contact() {
       </h1>
       <div className="prose max-w-xl">
         <p>
-          Open to conversations about partnerships, business development, or
-          just swapping notes on what&apos;s working right now. Reach out:
+          Open to conversations about delivery, project management, and
+          sales, or just swapping notes on what&apos;s working right now.
+          Reach out:
         </p>
         <ul>
           <li>

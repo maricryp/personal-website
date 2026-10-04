@@ -10,22 +10,23 @@ export default function About() {
       <h1 className="text-2xl font-semibold tracking-tight mb-6">About me</h1>
       <div className="prose max-w-xl">
         <p>
-          I&apos;m Mariana Coimbra Rodrigues, a business leader with four
-          years of experience as a Business Development Lead, building on an
-          earlier three years as a Business Analyst.
+          I&apos;m Mariana Coimbra Rodrigues. I work across sales, project
+          delivery, and client management. I started as a Business Analyst
+          and spent the last four years leading business development.
         </p>
         <p>
-          Over that time, I&apos;ve helped drive over $1B in transactions,
-          working directly with 60+ clients and building a network of 500+
-          contacts along the way.
+          In that time I&apos;ve worked on over $1B in transactions with 60+
+          clients, and built a network of 500+ contacts. That mix of
+          analysis and sales is what lets me sell work that the team can
+          actually deliver.
         </p>
         <h2>What I focus on</h2>
         <ul>
-          <li>RevOps</li>
-          <li>Business development</li>
+          <li>Delivery and project management</li>
+          <li>Sales and business development</li>
           <li>Account management</li>
-          <li>Strategy definition &amp; ICP</li>
-          <li>Goal-setting &amp; go-to-market direction</li>
+          <li>RevOps</li>
+          <li>Strategy, ICP, and goal setting</li>
         </ul>
       </div>
     </div>

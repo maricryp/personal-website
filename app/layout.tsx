@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mariana in Web3 | Business Developer",
+  title: "Mariana in Web3 | Delivery, Project & Sales Leader",
   description:
-    "Notes on business development, partnerships, and building pipeline, from Mariana in Web3.",
+    "Notes on delivery, project management, and sales, from Mariana in Web3.",
 };
 
 const navLinks = [

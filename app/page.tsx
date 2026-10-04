@@ -8,15 +8,16 @@ export default function Home() {
     <div className="max-w-3xl mx-auto px-6">
       <section className="py-16 sm:py-24">
         <p className="text-sm uppercase tracking-wide text-accent font-medium mb-3">
-          Business Developer
+          Delivery Manager · Project Manager · Sales
         </p>
         <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-5">
-          Hi, I&apos;m Mariana. Welcome to Mariana in Web3.
+          Hi, I&apos;m Mariana. I connect selling with delivering.
         </h1>
         <p className="text-lg text-muted max-w-xl mb-8">
-          I write about business development, partnerships, and what it
-          actually takes to build a pipeline that lasts: one deal, one
-          relationship, one lesson at a time.
+          I work where sales, projects, and clients meet. I write about
+          closing deals that can actually be delivered, keeping projects on
+          track, and building the kind of client relationships that last
+          past the first contract.
         </p>
         <div className="flex gap-4 text-sm">
           <Link
@@ -41,7 +42,7 @@ export default function Home() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-10">
           <div>
             <p className="text-4xl font-semibold tracking-tight mb-1">$1B+</p>
-            <p className="text-sm text-muted">Transactions driven</p>
+            <p className="text-sm text-muted">In transactions</p>
           </div>
           <div>
             <p className="text-4xl font-semibold tracking-tight mb-1">60+</p>
@@ -53,7 +54,7 @@ export default function Home() {
           </div>
           <div>
             <p className="text-4xl font-semibold tracking-tight mb-1">7+</p>
-            <p className="text-sm text-muted">Years in business development</p>
+            <p className="text-sm text-muted">Years across analysis and sales</p>
           </div>
         </div>
       </section>
