@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getSortedPostsData } from "@/lib/posts";
 import { contact } from "@/lib/contact";
+import { experience } from "@/lib/experience";
 
 const expertise = [
   {
@@ -38,45 +39,6 @@ const methods = [
     name: "Kaizen",
     where: "Bosch",
     text: "Used to improve day to day work through small, steady changes by the whole team.",
-  },
-];
-
-const experience = [
-  {
-    role: "Sales Executive (freelance)",
-    company: "Pashov Audits Group",
-    length: "Now",
-    text: "Owning the full sales cycle, from prospecting to closing.",
-  },
-  {
-    role: "Business Development Lead",
-    company: "Request Network",
-    length: "2024 to 2026",
-    text: "Led business development, covering ICP, pipeline, negotiations and key accounts.",
-  },
-  {
-    role: "Business Development Manager",
-    company: "Coinshift",
-    length: "2022 to 2024",
-    text: "Business development from strategy to signed deal.",
-  },
-  {
-    role: "Business Analyst",
-    company: "Sonae",
-    length: "2020 to 2022 · 1.5 years",
-    text: "Data analysis and business analysis, learning how a business really works before trying to grow it.",
-  },
-  {
-    role: "Continuous Process Improvement",
-    company: "Bosch",
-    length: "2019 to 2020 · 1 year",
-    text: "Improving day to day processes with Kaizen.",
-  },
-  {
-    role: "Project Master Thesis",
-    company: "Tintas CIN",
-    length: "2018 to 2019 · 7 months",
-    text: "Developed Lean Six Sigma methodologies.",
   },
 ];
 
@@ -215,16 +177,34 @@ export default function Home() {
             <li key={`${item.company}-${item.role}`} className="relative pl-8">
               <span className="absolute -left-[7px] top-2 h-3 w-3 rounded-full bg-accent" />
               <p className="text-sm text-muted">
-                {item.length}
-                {item.company && (
-                  <span className="text-accent font-medium">
-                    {" "}
-                    · {item.company}
-                  </span>
-                )}
+                {item.period}
+                {item.duration && ` · ${item.duration}`}
               </p>
               <h3 className="font-serif text-2xl">{item.role}</h3>
-              <p className="text-muted mt-1">{item.text}</p>
+              <p className="text-sm font-medium text-accent mt-0.5">
+                {item.company}
+                {item.type && (
+                  <span className="font-normal text-muted"> · {item.type}</span>
+                )}
+              </p>
+              {item.location && (
+                <p className="text-sm text-muted">{item.location}</p>
+              )}
+              {item.summary && (
+                <p className="text-muted mt-2">{item.summary}</p>
+              )}
+              {item.highlights && (
+                <details className="mt-3" open={item.open}>
+                  <summary className="cursor-pointer text-sm font-medium text-accent">
+                    Highlights
+                  </summary>
+                  <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted">
+                    {item.highlights.map((point) => (
+                      <li key={point}>{point}</li>
+                    ))}
+                  </ul>
+                </details>
+              )}
             </li>
           ))}
         </ol>
