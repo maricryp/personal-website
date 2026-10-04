@@ -43,6 +43,12 @@ const methods = [
 
 const experience = [
   {
+    role: "Sales Executive (freelance)",
+    company: "Pashov Audits Group",
+    length: "Now",
+    text: "Owning the full sales cycle, from prospecting to closing.",
+  },
+  {
     role: "Business Development Lead",
     length: "4 years",
     text: "Led business development from strategy to signed deal, covering ICP, pipeline, negotiations and key accounts.",
@@ -72,7 +78,8 @@ export default function Home() {
           aria-hidden
           className="pointer-events-none absolute top-0 right-0 h-72 w-72 rounded-full bg-accent-soft blur-3xl"
         />
-        <div className="relative">
+        <div className="relative flex flex-col-reverse gap-10 md:flex-row md:items-center md:justify-between">
+          <div>
           <span className="inline-block rounded-full bg-accent-soft px-4 py-1.5 text-sm text-accent font-medium mb-6">
             Delivery Manager · Project Manager · Sales
           </span>
@@ -84,10 +91,10 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-lg text-muted max-w-xl mb-9">
-            I work where sales, projects, and clients meet. I write about
-            closing deals that can actually be delivered, keeping projects on
-            track, and building the kind of client relationships that last
-            past the first contract.
+            I work where sales, projects, and clients meet, closing deals
+            that can actually be delivered and building client relationships
+            that last past the first contract. This is also my corner of the
+            internet to write about whatever I like.
           </p>
           <div className="flex flex-wrap gap-3 text-sm">
             <Link
@@ -103,6 +110,20 @@ export default function Home() {
               Say hello
             </Link>
           </div>
+          <p className="mt-8 flex items-center gap-2 text-sm text-muted">
+            <span className="h-2 w-2 rounded-full bg-accent" />
+            Currently freelancing with Pashov Audits Group as a Sales
+            Executive
+          </p>
+          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/mariana.jpg"
+            alt="Mariana Coimbra Rodrigues"
+            width={720}
+            height={720}
+            className="h-44 w-44 shrink-0 rounded-full object-cover ring-4 ring-accent-soft shadow-lg md:h-72 md:w-72"
+          />
         </div>
       </section>
 
@@ -173,7 +194,15 @@ export default function Home() {
           {experience.map((item) => (
             <li key={item.role} className="relative pl-8">
               <span className="absolute -left-[7px] top-2 h-3 w-3 rounded-full bg-accent" />
-              <p className="text-sm text-muted">{item.length}</p>
+              <p className="text-sm text-muted">
+                {item.length}
+                {item.company && (
+                  <span className="text-accent font-medium">
+                    {" "}
+                    · {item.company}
+                  </span>
+                )}
+              </p>
               <h3 className="font-serif text-2xl">{item.role}</h3>
               <p className="text-muted mt-1">{item.text}</p>
             </li>
@@ -181,31 +210,7 @@ export default function Home() {
         </ol>
       </section>
 
-      {latestPosts.length > 0 && (
-        <section className="pb-20">
-          <Eyebrow>Writing</Eyebrow>
-          <h2 className="font-serif text-3xl sm:text-4xl tracking-tight mb-8">
-            Latest posts
-          </h2>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {latestPosts.map((post) => (
-              <Link
-                key={post.slug}
-                href={`/blog/${post.slug}`}
-                className="group rounded-2xl border border-border bg-surface p-6 hover:border-accent transition-colors"
-              >
-                <p className="text-xs text-muted mb-2">{post.date}</p>
-                <h3 className="font-serif text-xl mb-2 group-hover:text-accent transition-colors">
-                  {post.title}
-                </h3>
-                <p className="text-sm text-muted">{post.excerpt}</p>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
-
-      <section className="pb-24">
+      <section className="pb-20">
         <div className="rounded-3xl bg-accent text-on-accent p-8 sm:p-12">
           <h2 className="font-serif text-3xl sm:text-4xl tracking-tight mb-3">
             Let&apos;s work together
@@ -238,6 +243,39 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {latestPosts.length > 0 && (
+        <section className="pb-24">
+          <Eyebrow>Writing</Eyebrow>
+          <h2 className="font-serif text-3xl sm:text-4xl tracking-tight mb-3">
+            Latest posts
+          </h2>
+          <p className="text-muted max-w-xl mb-8">
+            Thoughts on work, life, and whatever else is on my mind.
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {latestPosts.map((post) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="group rounded-2xl border border-border bg-surface p-6 hover:border-accent transition-colors"
+              >
+                <p className="text-xs text-muted mb-2">{post.date}</p>
+                <h3 className="font-serif text-xl mb-2 group-hover:text-accent transition-colors">
+                  {post.title}
+                </h3>
+                <p className="text-sm text-muted">{post.excerpt}</p>
+              </Link>
+            ))}
+          </div>
+          <Link
+            href="/blog"
+            className="inline-block mt-8 text-sm font-medium text-accent hover:underline underline-offset-4"
+          >
+            See all posts &rarr;
+          </Link>
+        </section>
+      )}
     </div>
   );
 }

@@ -15,7 +15,7 @@ export default function BlogIndex() {
         Writing
       </p>
       <h1 className="font-serif text-4xl sm:text-5xl tracking-tight mb-10">
-        Notes from my work
+        Latest posts
       </h1>
       <div className="grid gap-4 max-w-2xl">
         {posts.map((post) => (

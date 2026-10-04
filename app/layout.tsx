@@ -17,7 +17,7 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "Mariana Coimbra Rodrigues | Delivery, Project & Sales Leader",
   description:
-    "Notes on delivery, project management, and sales, from Mariana Coimbra Rodrigues.",
+    "Delivery, project management and sales leader. Work, writing and whatever else is on my mind, from Mariana Coimbra Rodrigues.",
 };
 
 const navLinks = [
