@@ -1,21 +1,25 @@
 ---
 title: "Hi, I'm Mariana"
 date: "2026-09-01"
-excerpt: "A quick introduction: who I am, what I do, and why I'm writing here."
+excerpt: "A quick introduction: where I'm coming from, and where I'm heading."
 ---
 
-I'm Mariana Coimbra Rodrigues. I work across sales, project delivery, and client management. Over seven years I've worked as a Business Analyst at Sonae, in continuous process improvement at Bosch, and for four years in business development, first as a Business Development Manager at Coinshift and then as a Business Development Lead at Request Network. The analysis and process work taught me how to read a business before I tried to grow one.
+I'm Mariana Coimbra Rodrigues. I've spent seven years across data analysis, process improvement and sales, and I'm now moving into delivery management.
 
-## A bit about me
+## Where I'm coming from
 
-In those four years I've worked on over $1B in transactions, with 60+ clients, and built a network of 500+ contacts. Most of that came down to relationships, not just numbers.
+I started in industry, working on process improvement at Tintas CIN and Bosch, then moved into business analysis at Sonae. After that I spent four years in business development in web3, at Coinshift and Request Network. Along the way I've worked on over $1B in transactions with 60+ clients, and built a network of 500+ contacts.
 
-## What I focus on
+## Why delivery
 
-My main areas are delivery and project management, sales, account management, and RevOps. But honestly, the part I care about most happens earlier than that: defining the strategy. Figuring out the right ICP, setting clear goals, and deciding the direction and method a team should actually follow.
+The part of the job I always liked most is what happens after the yes. Getting a partner integrated, unblocking their onboarding, keeping product, engineering and the client on the same page. At Request Network I closed integrations and stayed involved until they were live. At Coinshift I led the HubSpot implementation. Process improvement is where I started, and I still enjoy making work run better.
 
-## Why I'm writing this
+That's the thread I want to follow: selling what a team can really deliver, and then helping it get delivered.
 
-Selling something is the easy half. The hard half is making sure it gets delivered on time, on scope, and with a client who still wants to work with you afterwards. I want this space to be about that gap: what worked, what didn't, and what I'd do differently next time.
+## What I'm doing now
 
-If you want to get in touch, you'll find me on the [contact page](/contact).
+I'm freelancing with Pashov Audits Group as a Sales Executive, owning the full sales cycle from prospecting to closing.
+
+## Why I'm writing here
+
+This is my space to write about delivery, projects, sales, and whatever else is on my mind. If you want to get in touch, you'll find me on the [contact page](/contact).
