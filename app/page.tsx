@@ -55,10 +55,10 @@ const experience = [
     text: "Led business development, covering ICP, pipeline, negotiations and key accounts.",
   },
   {
-    role: "Business Development Lead",
+    role: "Business Development Manager",
     company: "Coinshift",
     length: "2022 to 2024",
-    text: "Led business development from strategy to signed deal.",
+    text: "Business development from strategy to signed deal.",
   },
   {
     role: "Business Analyst",
@@ -73,7 +73,7 @@ const experience = [
     text: "Improving day to day processes with Kaizen.",
   },
   {
-    role: "Process Improvement",
+    role: "Project Master Thesis",
     company: "Tintas CIN",
     length: "2018 to 2019 · 7 months",
     text: "Developed Lean Six Sigma methodologies.",
