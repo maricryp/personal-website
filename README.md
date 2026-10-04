@@ -1,49 +1,48 @@
-# Business developer site
+# Mariana Coimbra Rodrigues
 
-A simple personal site and blog, built with Next.js (App Router) and Tailwind CSS.
+Personal website and blog, live at [marianainweb3.com](https://marianainweb3.com).
+
+Built with Next.js (App Router), TypeScript and Tailwind CSS, exported as a static site and hosted on Cloudflare Pages. Every push to `main` is built and deployed automatically.
 
 ## Structure
 
-- `app/page.tsx` — home page (hero + latest posts)
-- `app/about/page.tsx` — about page
-- `app/contact/page.tsx` — contact page
-- `app/blog/page.tsx` — blog index
-- `app/blog/[slug]/page.tsx` — individual post page
-- `posts/*.md` — blog posts, written in Markdown with frontmatter (`title`, `date`, `excerpt`)
-- `lib/posts.ts` — reads and parses the Markdown files
+- `app/page.tsx`: home page (hero, what I do, numbers, methods, experience, contact, latest posts)
+- `app/blog/`: blog index and individual post pages
+- `app/contact/page.tsx`: contact page
+- `app/globals.css`: color palette and typography
+- `lib/experience.ts`: work history shown on the home page
+- `lib/contact.ts`: contact details
+- `lib/posts.ts`: reads and parses the Markdown posts
+- `posts/*.md`: blog posts, written in Markdown with `title`, `date` and `excerpt` frontmatter
 
 ## Running locally
 
 ```bash
+npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Then open [http://localhost:3000](http://localhost:3000).
 
-## Adding a new post
+## Writing a post
 
-Create a new `.md` file in `posts/`, e.g. `posts/my-new-post.md`:
+Add a Markdown file to `posts/`:
 
 ```md
 ---
 title: "My New Post"
-date: "2026-08-24"
-excerpt: "A short one-line summary shown on the blog index."
+date: "2026-10-04"
+excerpt: "A short summary shown on the blog index."
 ---
 
-Your post content here, in Markdown.
+The post itself, in Markdown.
 ```
 
-It will automatically appear on the blog index and home page, sorted by date.
-
-## Things to customize before publishing
-
-- `app/layout.tsx` — site title/description and your name in the header/footer
-- `app/page.tsx` — hero copy on the home page
-- `app/about/page.tsx` — your real bio and focus areas
-- `app/contact/page.tsx` — your real email and LinkedIn URL (currently placeholders)
-- `app/favicon.ico` — replace with your own icon
+It shows up on the blog page and the home page, newest first.
 
 ## Deploying
 
-The easiest option is [Vercel](https://vercel.com/new) — connect the repo (or run `vercel` from this folder) and it deploys automatically. Any host that supports Next.js works too.
+Cloudflare Pages is connected to this repo with:
+
+- Build command: `npm run build`
+- Output directory: `out`
